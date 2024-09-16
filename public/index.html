@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chat App</title>
+    <style>
+        body {
+            background-image: url('chat_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body >
+    <h1 class="font-bold m-2 text-2xl text-green-700 text-center">Chat Application using Socket</h1>
+
+    <div class="flex justify-center items-center w-full">
+        <input type="text" id="newmsg" placeholder="Enter message 😊" class="border-2 border-black m-2 rounded-md p-2 text-lg">
+        <button id="btn" class="bg-blue-400 border border-black rounded-md text-md font-bold p-2">Send</button>
+    </div>
+
+    <ul id="msgList" class="m-4 text-lg flex flex-col">
+        
+    </ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
